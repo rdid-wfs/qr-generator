@@ -1,0 +1,33 @@
+name: Build image Wagram
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: ghcr.io/rdid-wfs/mini-qr-wagram:latest
+          build-args: |
+            VITE_HIDE_CREDITS=true
+            VITE_DEFAULT_PRESET=wagram
+            VITE_DISABLE_LOCAL_STORAGE=true
+            VITE_QR_CREATE_SIMPLE_FULL_MODE_TOGGLE=false
+            VITE_FIELDS_VISIBLE=
+            VITE_QR_CODE_PRESETS=[{"name":"wagram","width":300,"height":300,"image":"https://URL-DE-TON-LOGO","dotsOptions":{"color":"#000000","type":"rounded"},"cornersSquareOptions":{"color":"#000000","type":"extra-rounded"},"backgroundOptions":{"color":"#ffffff"},"imageOptions":{"margin":4,"imageSize":0.3},"qrOptions":{"errorCorrectionLevel":"H"}}]
