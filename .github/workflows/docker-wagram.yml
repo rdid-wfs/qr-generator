@@ -27,6 +27,6 @@ jobs:
           build-args: |
             VITE_HIDE_CREDITS=true
             VITE_DISABLE_LOCAL_STORAGE=true
-            VITE_QR_CODE_PRESETS=[{"name":"wagram","width":300,"height":300,"image":"https://www.columbuscafe.com/wp-content/themes/columbus/assets/images/logo.svg","dotsOptions":{"color":"#000000","type":"rounded"},"cornersSquareOptions":{"color":"#000000","type":"extra-rounded"},"backgroundOptions":{"color":"#ffffff"},"imageOptions":{"margin":4,"imageSize":0.3},"qrOptions":{"errorCorrectionLevel":"H"}}]
+            VITE_QR_CODE_PRESETS=[{"name":"wagram","data":"https://example.com","image":"https://www.columbuscafe.com/wp-content/themes/columbus/assets/images/logo.svg","width":300,"height":300,"margin":8,"type":"svg","dotsOptions":{"color":"#000000","type":"rounded"},"cornersSquareOptions":{"color":"#000000","type":"extra-rounded"},"cornersDotOptions":{"color":"#000000","type":"square"},"backgroundOptions":{"color":"#ffffff"},"imageOptions":{"margin":4,"imageSize":0.3},"style":{"borderRadius":"0px","background":"#ffffff"}}]
             VITE_DEFAULT_PRESET=wagram
            
