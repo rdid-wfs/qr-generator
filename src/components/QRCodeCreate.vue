@@ -124,6 +124,8 @@ const simpleFields = ref<SimpleFieldKey[]>(
 )
 const isCustomizeFieldsOpen = ref(false)
 const isSimpleMode = computed(() => viewMode.value === 'simple')
+const showFrame = ref(false)
+
 
 // Controls which accordion sections are expanded. Both modes show the section
 // headers. We keep hidden sections OUT of the open set: otherwise a section
@@ -481,7 +483,6 @@ watch(frameWidth, () => {
     frameCaptionWidth.value = frameWidth.value - PREVIEW_QRCODE_DIM_UNIT
   }
 })
-const showFrame = ref(false)
 
 // Cap the framed preview's layout footprint (via FitScaleBox) so wide side
 // captions can't grow the (content-sized) preview column, push the settings
