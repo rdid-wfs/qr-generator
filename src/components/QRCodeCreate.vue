@@ -1532,7 +1532,7 @@ const updateDataFromModal = (newData: string) => {
         <div class="mt-3 flex flex-col items-center gap-4">
           <div class="flex flex-col items-center justify-center gap-2">
             <button
-              v-if="exportMode !== ExportMode.Batch"
+              v-if="false"
               id="copy-qr-image-button"
               class="button flex w-fit max-w-full flex-row items-center gap-1"
               @click="copyQRToClipboard"
