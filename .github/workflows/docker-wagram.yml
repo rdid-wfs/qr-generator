@@ -26,4 +26,5 @@ jobs:
           tags: ghcr.io/rdid-wfs/mini-qr-wagram:latest
           build-args: |
             VITE_HIDE_CREDITS=true
+            VITE_DISABLE_LOCAL_STORAGE=true
            
