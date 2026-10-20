@@ -26,8 +26,4 @@ jobs:
           tags: ghcr.io/rdid-wfs/mini-qr-wagram:latest
           build-args: |
             VITE_HIDE_CREDITS=true
-            VITE_DEFAULT_PRESET=wagram
-            VITE_DISABLE_LOCAL_STORAGE=true
-            VITE_QR_CREATE_SIMPLE_FULL_MODE_TOGGLE=false
-            VITE_FIELDS_VISIBLE=
-            VITE_QR_CODE_PRESETS=[{"name":"wagram","width":300,"height":300,"image":"https://www.columbuscafe.com/wp-content/themes/columbus/assets/images/logo.svg","dotsOptions":{"color":"#000000","type":"rounded"},"cornersSquareOptions":{"color":"#000000","type":"extra-rounded"},"backgroundOptions":{"color":"#ffffff"},"imageOptions":{"margin":4,"imageSize":0.3},"qrOptions":{"errorCorrectionLevel":"H"}}]
+           
