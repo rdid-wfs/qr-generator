@@ -80,10 +80,11 @@ const isModeToggleDisabled = computed(() => {
     <!-- Desktop header - only visible on desktop -->
     <div class="hidden md:mx-auto md:my-4 md:flex md:w-5/6 md:flex-row md:justify-between md:ps-4">
       <div class="flex items-center">
-        <h1 class="text-3xl text-gray-700 dark:text-gray-100">MiniQR</h1>
+        <h1 class="text-3xl text-gray-700 dark:text-gray-100">Columb'QR</h1>
 
         <!-- Mode toggle button - only visible on desktop -->
         <div
+          v-if="false"
           class="ms-4 flex items-center gap-1 rounded-lg border border-zinc-300 bg-zinc-100 p-1 dark:border-zinc-700 dark:bg-zinc-800"
         >
           <button
