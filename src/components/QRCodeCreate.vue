@@ -2719,7 +2719,7 @@ const updateDataFromModal = (newData: string) => {
                     <label :for="'cornersDotOptionsType-' + type">{{ t(type) }}</label>
                   </div>
                 </fieldset>
-                <fieldset class="flex-1" v-show="isFieldVisible('errorCorrectionLevel')">
+                <fieldset class="flex-1" v-if="false" v-show="isFieldVisible('errorCorrectionLevel')">
                   <div class="flex flex-row items-center gap-2">
                     <legend>{{ t('Error correction level') }}</legend>
                     <a
