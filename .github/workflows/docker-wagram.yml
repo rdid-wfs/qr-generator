@@ -27,7 +27,7 @@ jobs:
           build-args: |
             VITE_HIDE_CREDITS=true
             VITE_DISABLE_LOCAL_STORAGE=true
-            VITE_QR_CODE_PRESETS=[{"name":"wagram","data":"https://example.com","image":"https://drive.google.com/file/d/1vRx9WcsV9apkaXmwcJN68AF_sW0zmRGM/view?usp=sharing","width":300,"height":300,"margin":8,"type":"png","dotsOptions":{"color":"#000000","type":"square"},"cornersSquareOptions":{"color":"#000000","type":"square"},"cornersDotOptions":{"color":"#000000","type":"square"},"backgroundOptions":{"color":"#ffffff"},"imageOptions":{"margin":4,"imageSize":0.3},"style":{"borderRadius":"0px","background":"transparent"}}]
+            VITE_QR_CODE_PRESETS=[{"name":"wagram","data":"https://example.com","https://lh3.googleusercontent.com/d/1vRx9WcsV9apkaXmwcJN68AF_sW0zmRGM","width":300,"height":300,"margin":8,"type":"png","dotsOptions":{"color":"#000000","type":"square"},"cornersSquareOptions":{"color":"#000000","type":"square"},"cornersDotOptions":{"color":"#000000","type":"square"},"backgroundOptions":{"color":"#ffffff"},"imageOptions":{"margin":4,"imageSize":0.3},"style":{"borderRadius":"0px","background":"transparent"}}]
             VITE_DEFAULT_PRESET=wagram
             VITE_QR_CREATE_SIMPLE_FULL_MODE_TOGGLE=false
             VITE_FIELDS_VISIBLE=errorCorrectionLevel
