@@ -1559,6 +1559,7 @@ const updateDataFromModal = (newData: string) => {
               <p>{{ t('Copy QR Code to clipboard') }}</p>
             </button>
             <button
+              v-if="false"
               id="save-qr-code-config-button"
               class="button flex w-fit max-w-full flex-row items-center gap-1"
               @click="downloadQRConfig"
@@ -1582,6 +1583,7 @@ const updateDataFromModal = (newData: string) => {
               <p>{{ t('Save QR Code configuration') }}</p>
             </button>
             <button
+              v-if="false"
               id="load-qr-code-config-button"
               class="button flex w-fit max-w-full flex-row items-center gap-1"
               @click="loadQrConfigFromFile"
@@ -1660,6 +1662,7 @@ const updateDataFromModal = (newData: string) => {
                   </svg>
                 </button>
                 <button
+                  v-if="false"
                   id="download-qr-image-button-jpg"
                   class="button"
                   @click="() => downloadQRImage('jpg')"
@@ -1695,6 +1698,7 @@ const updateDataFromModal = (newData: string) => {
                   </svg>
                 </button>
                 <button
+                  v-if="false"
                   id="download-qr-image-button-svg"
                   class="button"
                   @click="() => downloadQRImage('svg')"
@@ -1730,6 +1734,7 @@ const updateDataFromModal = (newData: string) => {
                   </svg>
                 </button>
                 <button
+                  v-if="false"
                   id="download-qr-text-button"
                   class="button"
                   @click="openTextExportModal"
